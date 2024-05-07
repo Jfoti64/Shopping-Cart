@@ -1,9 +1,8 @@
-import './App.css';
-
 function App() {
   return (
     <>
-      <div>App</div>
+      <h1>Welcome to Stockpile</h1>
+      <p>Stock up on everything you could ever need here at Stockpile</p>
     </>
   );
 }

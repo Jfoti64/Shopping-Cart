@@ -1,10 +1,6 @@
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-self:flex-start;
-  padding: 1em;
-} 
-
-.header a {
-  
+  align-self: flex-start;
 }

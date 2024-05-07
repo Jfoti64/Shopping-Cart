@@ -1,6 +1,6 @@
 import App from './App';
-import Shop from './Shop';
-import Cart from './Cart';
+import Shop from './components/Shop/Shop.jsx';
+import Cart from './components/Cart/Cart.jsx';
 import Layout from './Layout.jsx';
 //import ErrorPage from "./ErrorPage";
 
