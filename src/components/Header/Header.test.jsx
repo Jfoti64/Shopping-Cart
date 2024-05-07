@@ -7,7 +7,7 @@ import Header from './Header';
 
 const Home = () => <h1>Home Page</h1>;
 const ShopPage = () => <h1>Shop Page</h1>;
-const Cart = () => <h1>Cart Page</h1>;
+const CartPage = () => <h1>Cart Page</h1>;
 
 describe('Header component', () => {
   beforeEach(() => {
@@ -17,7 +17,7 @@ describe('Header component', () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="shopPage" element={<ShopPage />} />
-          <Route path="cart" element={<Cart />} />
+          <Route path="cartPage" element={<CartPage />} />
         </Routes>
       </MemoryRouter>
     );

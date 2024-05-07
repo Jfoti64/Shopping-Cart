@@ -1,6 +1,6 @@
 import App from './App';
 import ShopPage from './components/ShopPage/ShopPage.jsx';
-import Cart from './components/Cart/Cart.jsx';
+import CartPage from './components/CartPage/CartPage.jsx';
 import Layout from './Layout.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 
@@ -12,7 +12,7 @@ const routes = [
     children: [
       { path: '/', element: <App /> },
       { path: 'shopPage', element: <ShopPage /> },
-      { path: 'cart', element: <Cart /> },
+      { path: 'cartPage', element: <CartPage /> },
     ],
   },
 ];
