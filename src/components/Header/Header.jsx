@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <Link to="/">Home</Link>
-      <Link to="Shop">Shop</Link>
+      <Link to="ShopPage">Shop</Link>
       <Link to="Cart">Cart</Link>
     </header>
   );

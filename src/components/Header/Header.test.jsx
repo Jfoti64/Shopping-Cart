@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event';
 import Header from './Header';
 
 const Home = () => <h1>Home Page</h1>;
-const Shop = () => <h1>Shop Page</h1>;
+const ShopPage = () => <h1>Shop Page</h1>;
 const Cart = () => <h1>Cart Page</h1>;
 
 describe('Header component', () => {
@@ -16,7 +16,7 @@ describe('Header component', () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="shop" element={<Shop />} />
+          <Route path="shopPage" element={<ShopPage />} />
           <Route path="cart" element={<Cart />} />
         </Routes>
       </MemoryRouter>

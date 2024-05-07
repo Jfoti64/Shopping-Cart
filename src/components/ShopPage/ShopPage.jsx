@@ -1,8 +1,8 @@
-import styles from './Shop.module.css';
+import styles from './ShopPage.module.css';
 import Card from '../Card/Card';
 import { useState, useEffect } from 'react';
 
-function Shop() {
+function ShopPage() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -41,4 +41,4 @@ function Shop() {
   );
 }
 
-export default Shop;
+export default ShopPage;
