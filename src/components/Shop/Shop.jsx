@@ -25,7 +25,7 @@ function Shop() {
 
   return (
     <>
-      <div className={styles.shop}>Shop</div>
+      <h1 className={styles.shop}>Shop</h1>
       <div className={styles.cards}>
         {products.map((product) => (
           <Card

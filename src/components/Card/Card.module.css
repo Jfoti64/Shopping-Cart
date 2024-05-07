@@ -1,6 +1,50 @@
+/* Styles for the Card component */
 .card {
   display: flex;
   flex-direction: column;
-  width: 205px;
-  color: red;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.cardTitle {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  overflow-x: scroll;
+  height: 100px;
+}
+
+.cardDescription {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 8px;
+  overflow-y: scroll;
+  height: 40px;
+}
+
+.cardPrice {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cardButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+.cardButton:hover {
+  background-color: #0056b3;
 }
