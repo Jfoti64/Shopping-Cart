@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-self:flex-start;
+  padding: 1em;
+} 
+
+.header a {
+  
+}
