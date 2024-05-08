@@ -5,11 +5,11 @@ function Total({ cart }) {
   // Calculate total using reduce
   const total = cart.reduce((sum, product) => {
     // Ensure the price is a valid number
-    const price = product.price;
+    const price = product.price * product.quantity;
     return sum + price;
   }, 0);
 
-  return <div className={styles.total}>${total}</div>;
+  return <div className={styles.total}>${total.toFixed(2)}</div>;
 }
 
 Total.propTypes = {

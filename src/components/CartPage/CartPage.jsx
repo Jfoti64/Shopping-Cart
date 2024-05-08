@@ -1,10 +1,10 @@
 import { useOutletContext } from 'react-router-dom';
 import styles from './CartPage.module.css';
-import Card from '../Card/Card';
+import CartCard from '../CartCard/CartCard';
 import Total from '../Total/Total';
 
 function CartPage() {
-  const { cart } = useOutletContext();
+  const { cart, updateQuantity, removeItem } = useOutletContext();
 
   return (
     <>
@@ -13,13 +13,15 @@ function CartPage() {
         <>
           <div className={styles.cards}>
             {cart.map((product) => (
-              <Card
+              <CartCard
                 key={product.id}
-                id={product.id} // Pass product ID to Card
+                id={product.id}
                 imgsrc={product.imgsrc}
                 name={product.name}
-                description={product.description}
                 price={product.price}
+                quantity={product.quantity}
+                updateQuantity={updateQuantity}
+                removeItem={removeItem}
               />
             ))}
           </div>

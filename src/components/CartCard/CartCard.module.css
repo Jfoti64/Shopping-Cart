@@ -1,0 +1,54 @@
+.CartCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  place-items: center;
+  place-self: center;
+  justify-content: space-between;
+  width: 80%; /* Set a max width for the entire card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+  width: 100%;
+  width: 120px; /* Set a maximum width for the image */
+  max-height: 100px; /* Set a maximum height for the image */
+  border-radius: 8px;
+  object-fit: scale-down; /* Maintain aspect ratio while filling the box */
+  margin-bottom: 8px;
+}
+
+.cardTitle {
+  margin: 8px 0;
+  font-size: 1.2em;
+  text-align: center;
+  width: 300px;
+}
+
+.quantityDiv {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.quantityDiv button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.quantityDiv button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cardPrice {
+  margin-top: 8px;
+  font-weight: bold;
+}
