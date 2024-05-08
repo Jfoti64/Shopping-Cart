@@ -17,7 +17,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Layout addToCart={addToCart} itemCount={itemCount} />,
+      element: <Layout addToCart={addToCart} itemCount={itemCount} cart={cart} />,
       errorElement: <ErrorPage />,
       children: routes,
     },

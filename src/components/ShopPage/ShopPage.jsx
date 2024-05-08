@@ -1,11 +1,14 @@
 import styles from './ShopPage.module.css';
 import Card from '../Card/Card';
 import { useState, useEffect } from 'react';
+import { useOutletContext } from 'react-router-dom';
 
 function ShopPage() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  const { addToCart } = useOutletContext();
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products', { mode: 'cors' })
@@ -30,10 +33,12 @@ function ShopPage() {
         {products.map((product) => (
           <Card
             key={product.id}
+            id={product.id} // Pass product ID to Card
             imgsrc={product.image}
             name={product.title}
             description={product.description}
             price={`$${product.price}`}
+            addToCart={addToCart}
           />
         ))}
       </div>
