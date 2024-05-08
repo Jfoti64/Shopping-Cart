@@ -37,14 +37,14 @@ describe('CartPage component', () => {
       imgsrc: 'https://example.com/jacket.jpg',
       name: 'Mens Cotton Jacket',
       description: 'great outerwear jackets for Spring/Autumn/Winter',
-      price: '$55.99',
+      price: 55.99,
     },
     {
       id: 2,
       imgsrc: 'https://example.com/tshirt.jpg',
       name: 'Mens Casual Slim Fit',
       description: 'Comfortable and stylish T-Shirt for everyday wear',
-      price: '$15.99',
+      price: 15.99,
     },
   ];
 

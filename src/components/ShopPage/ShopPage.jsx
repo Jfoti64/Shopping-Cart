@@ -37,7 +37,7 @@ function ShopPage() {
             imgsrc={product.image}
             name={product.title}
             description={product.description}
-            price={`$${product.price}`}
+            price={product.price}
             addToCart={addToCart}
           />
         ))}

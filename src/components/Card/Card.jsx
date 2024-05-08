@@ -7,7 +7,7 @@ function Card({ id, imgsrc, name, description, price, addToCart }) {
       <img src={imgsrc} alt={name} className={styles.cardImage} />
       <h2 className={styles.cardTitle}>{name}</h2>
       <p className={styles.cardDescription}>{description}</p>
-      <div className={styles.cardPrice}>{price}</div>
+      <div className={styles.cardPrice}>${price.toFixed(2)}</div>
       <button
         className={styles.cardButton}
         onClick={() => addToCart({ id, imgsrc, name, description, price, addToCart })}
