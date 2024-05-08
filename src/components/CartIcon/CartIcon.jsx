@@ -14,7 +14,7 @@ function CartIcon({ itemCount }) {
 }
 
 CartIcon.propTypes = {
-  itemCount: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  itemCount: PropTypes.number.isRequired,
 };
 
 export default CartIcon;

@@ -12,7 +12,7 @@ function App() {
     setCart((prevCart) => [...prevCart, item]);
   };
 
-  const itemCount = () => cart.length;
+  const itemCount = cart.length;
 
   const router = createBrowserRouter([
     {
