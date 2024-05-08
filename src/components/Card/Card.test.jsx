@@ -22,7 +22,7 @@ function CartWithCard() {
         imgsrc="https://example.com/jacket.jpg"
         name="Mens Cotton Jacket"
         description="great outerwear jackets for Spring/Autumn/Winter"
-        price="$55.99"
+        price={55.99}
         addToCart={addToCart}
       />
     </MemoryRouter>
@@ -40,7 +40,7 @@ describe('Card component', () => {
           imgsrc="https://example.com/jacket.jpg"
           name="Mens Cotton Jacket"
           description="great outerwear jackets for Spring/Autumn/Winter"
-          price="$55.99"
+          price={55.99}
           addToCart={addToCart}
         />
       </MemoryRouter>
