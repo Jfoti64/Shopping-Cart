@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import Header from './Header';
 
-const Home = () => <h1>Home Page</h1>;
+const HomePage = () => <h1>Home Page</h1>;
 const ShopPage = () => <h1>Shop Page</h1>;
 const CartPage = () => <h1>Cart Page</h1>;
 
@@ -15,7 +15,7 @@ describe('Header component', () => {
       <MemoryRouter initialEntries={['/']}>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="shopPage" element={<ShopPage />} />
           <Route path="cartPage" element={<CartPage />} />
         </Routes>

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-//import userEvent from '@testing-library/user-event';
+import userEvent from '@testing-library/user-event';
 import Card from './Card';
 
 describe('Card component', () => {
@@ -22,4 +22,19 @@ describe('Card component', () => {
   });
 
   // Click add to cart
+  it('adds clicked item to cart', async () => {
+    render(
+      <Card
+        imgsrc="https://example.com/jacket.jpg"
+        name="Mens Cotton Jacket"
+        description="great outerwear jackets for Spring/Autumn/Winter"
+        price="$55.99"
+      />
+    );
+    const user = userEvent.setup();
+    const addToCartButton = screen.getByRole('button', { name: /add to cart/i });
+
+    await user.click(addToCartButton);
+    expect(screen.getByText('Shop Page')).toBeInTheDocument();
+  });
 });
