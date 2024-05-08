@@ -18,6 +18,8 @@ Layout.propTypes = {
   addToCart: PropTypes.func.isRequired,
   itemCount: PropTypes.number.isRequired,
   cart: PropTypes.array,
+  updateQuantity: PropTypes.func,
+  removeItem: PropTypes.func,
 };
 
 export default Layout;

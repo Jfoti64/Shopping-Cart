@@ -6,6 +6,12 @@ import Total from '../Total/Total';
 function CartPage() {
   const { cart, updateQuantity, removeItem } = useOutletContext();
 
+  const removeAllItems = () => {
+    cart.map((item) => {
+      removeItem(item.id);
+    });
+  };
+
   return (
     <>
       <h1 className={styles.cart}>Cart</h1>
@@ -26,6 +32,9 @@ function CartPage() {
             ))}
           </div>
           <Total cart={cart} />
+          <button className={styles.button} onClick={removeAllItems}>
+            Checkout
+          </button>
         </>
       ) : (
         <p>Your cart is empty</p>
